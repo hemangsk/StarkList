@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"
+
+    ?>
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1565c0"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+
+        android:layout_alignParentEnd="false"
+        app:titleTextColor="#fff"
+        app:subtitleTextColor="#fff"
+        android:elevation="4dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/frameLayout">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="100dp"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentStart="true"
+            android:elevation="2dp"
+            android:id="@+id/linearLayout">
+            <LinearLayout
+                android:id="@+id/textbox3"
+                android:orientation="vertical"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5"
+                android:layout_width="0dip"
+                android:background="#1a237e">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="0"
+                    android:id="@+id/remaining"
+                    android:textSize="40dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="tasks remaining"
+                    android:id="@+id/textView3"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/textbox4"
+                android:orientation="vertical"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5"
+                android:layout_width="0dip"
+                android:background="#304FFE">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="0"
+                    android:id="@+id/textView5"
+                    android:textSize="40dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="tasks completed"
+                    android:id="@+id/textView4"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_alignParentStart="false"
+        android:id="@+id/relativeLayout"
+        android:background="#1565c0"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Hemang Kumar"
+            android:id="@+id/textView"
+            android:textSize="25dp"
+            android:layout_marginEnd="31dp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Computer Scientist"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:textColor="#fff"
+            android:elevation="4dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/frameLayout"
+        android:layout_alignParentEnd="true"
+        android:elevation="4dp" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+
+
+        android:src="@drawable/ic_send_white_36dp"
+
+        app:fabSize="normal"
+        app:rippleColor="@color/colorPrimaryDark"
+
+
+
+
+
+
+        android:id="@+id/button"
+
+
+
+
+        android:onClick="showmsg"
+
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonstyle"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
